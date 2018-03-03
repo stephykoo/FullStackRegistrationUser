@@ -1,0 +1,22 @@
+<h1>Registration Form</h1>
+
+<form action="users/register" method="POST">
+  <p><input type="text" name="fullname" placeholder="Full name" autofocus required/></p>
+  <p><input type="text" name="username" placeholder="Your username"  required/></p>
+  <p><input type="password" name="password" placeholder="Your password" required/></p>
+  <p><input type="email" name="email" placeholder="Your email" required/></p>
+  <p><input type="text" name="street" placeholder="Street" required/></p>
+  <p><input type="text" name="city" placeholder="City" required/></p>
+  <p><input type="text" name="state" placeholder="State" required/></p>
+  <p><input type="text" name="postalcode" placeholder="Postal Code" required/></p>
+  <p><input type="text" name="country" placeholder="Country" required/></p>
+  <p><input type="text" name="phone_number_home" placeholder="Home Phone Number" /></p>
+  <p><input type="text" name="phone_number_cell" placeholder="Cell Phone Number" /></p>
+  <p><input type="text" name="phone_number_work" placeholder="Work Phone Number" /></p>
+
+  <input type="submit" value="Register" />
+</form>
+
+<p>
+  Already registered? <%= link_to "Login", users_login_path %>
+</p>
